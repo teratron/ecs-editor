@@ -1,0 +1,51 @@
+# IDEs
+.vscode/
+.idea/
+
+# Local settings
+*/settings.json
+*/settings.*.json
+
+# Agents
+CLAUDE.md
+GEMINI.md
+QWEN.md
+.*/workflows/
+.*/commands/
+.*/prompts/
+.*/skills/
+.*/rules/
+!.agents/workflows/
+!.agents/skills/
+!.agents/rules/
+
+# Magic Spec
+.magic/
+.agents/workflows/magic.*.md
+
+# Go
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories
+# vendor/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Game engines
+.references/
