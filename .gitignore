@@ -13,19 +13,36 @@
 # Agents
 CLAUDE.md
 GEMINI.md
+CODEX.md
 QWEN.md
-.*/workflows/
+copilot-instructions.md
+
+## Workflows
 .*/commands/
 .*/prompts/
-.*/skills/
-.*/rules/
+.*/workflows/
 !.agents/workflows/
+!.github/workflows/
+.agents/workflows/magic*.md
+
+## Skills
+.*/skills/
 !.agents/skills/
+.agents/skills/magic*
+
+## Rules
+.*/rules/
 !.agents/rules/
+.agents/rules/magic*.md
 
 # Magic Spec
 .magic/
-.agents/workflows/magic.*.md
+
+## Generated graph artifacts
+.design/spec-graph.html
+.design/spec-graph.json
+.design/.graph-cache/
+.design/wiki/
 
 # Go
 # Binaries for programs and plugins
