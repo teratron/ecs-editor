@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [ecs-engine: l1-type-registry.md], [ecs-engine: l1-component-system.md] |
+| **Related Specifications** | [boltengine: l1-type-registry.md], [boltengine: l1-component-system.md] |
 
 ## Overview
 
@@ -32,6 +32,7 @@ Manually writing UI code for every component property is a waste of time and err
 ### 4.1 Widget Mapping
 
 The Inspector maps Go types to UI widgets:
+
 - `bool` → Checkbox.
 - `float32/64` → Input box or Slider (if range attribute is present).
 - `string` → Text field.

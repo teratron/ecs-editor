@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [ecs-engine: l1-asset-system.md], [ecs-engine: l1-asset-formats.md] |
+| **Related Specifications** | [boltengine: l1-asset-system.md], [boltengine: l1-asset-formats.md] |
 
 ## Overview
 
@@ -36,6 +36,7 @@ Working with raw paths is inefficient. The Asset Browser provides a visual overv
 ### 4.2 Asset Thumbnails
 
 The Editor generates and caches thumbnails for supported types:
+
 - **Images**: Downscaled preview.
 - **Meshes**: Small render of the model with a neutral background.
 - **Scenes**: Icon based on scene content.

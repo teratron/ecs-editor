@@ -5,7 +5,7 @@
 
 ## Overview
 
-Global registry for the ECS Editor application specifications.
+Global registry for the Bolt Editor application specifications.
 
 ## System Files
 

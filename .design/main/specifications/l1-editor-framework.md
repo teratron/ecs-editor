@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [ecs-engine: l1-ui-system.md], [ecs-engine: l1-scene-system.md] |
+| **Related Specifications** | [boltengine: l1-ui-system.md], [boltengine: l1-scene-system.md] |
 
 ## Overview
 
@@ -27,27 +27,27 @@ A modern engine requires an integrated environment for scene composition. Relyin
 - **INV-2**: The "Game World" being edited MUST NOT be aware it is running inside the Editor, except through standard engine interfaces.
 - **INV-3**: The Editor UI is built using the engine's OWN `ui-system`, fulfilling the "dogfooding" principle.
 
-
 ## 4. Detailed Design
 
 ### 4.1 Shell Architecture
 
 The Editor is composed of:
+
 1. **Docking Host**: The root window container that manages the spatial arrangement of panels.
 2. **Global Editor State**: Tracks current selection, application mode (Edit/Play/Pause), and active project path.
 3. **Workspace Layouts**: Saved configurations of panels (e.g., "Default", "Animation", "2D Layout").
 
-
 ### 4.2 Panel System
 
 Panels are independent plugins that register with the Editor Framework:
+
 - **Registry**: `EditorApp.RegisterPanel("id", widget_factory)`
 - **Lifecycle**: Panels handle `Open`, `Close`, `Focus`, `SaveState`.
-
 
 ### 4.3 Input Dispatch
 
 The Editor must distinguish between inputs targeted at:
+
 1. **Editor UI** (buttons, text fields).
 2. **Viewport Manipulation** (orbiting camera).
 3. **In-game Interaction** (when the game is "running" in-editor).

@@ -1,21 +1,21 @@
 # Contributing
 
-## 📂 Editor Repository Structure (`ecs-editor`)
+## 📂 Editor Repository Structure (`bolteditor`)
 
-The editor is a **separate Git repository** that depends on `ecs-engine` as a standard Go module.
+The editor is a **separate Git repository** that depends on `boltengine` as a standard Go module.
 It never imports `internal/` packages from the engine — only `pkg/`. See `l1-multi-repo-architecture`
 for the full rationale and versioning contract.
 
 ```mermaid
 graph TD
-    subgraph "Repository: ecs-editor"
+    subgraph "Repository: bolteditor"
         ED_CMD[cmd/editor]
         ED_AI[internal/ai]
         ED_ORCH[internal/orchestrator]
         ED_UI[internal/panels]
     end
 
-    subgraph "Repository: ecs-engine"
+    subgraph "Repository: boltengine"
         ENG_CORE[internal/ecs]
         ENG_HOT[internal/hotreload]
         ENG_PKG[pkg/editor & pkg/protocol]
@@ -34,7 +34,7 @@ graph TD
 ```
 
 ```plaintext
-ecs-editor/
+bolteditor/
 ├── cmd/
 │   ├── editor/             # Main editor binary
 │   │   └── main.go         # NewApp() + DefaultPlugins + EditorPlugin{}
@@ -112,13 +112,13 @@ ecs-editor/
 │   └── default.flow.json   # Starter flow definition for new projects
 │
 ├── go.mod
-│   # module github.com/org/ecs-editor
+│   # module github.com/org/bolteditor
 │   #
-│   # require github.com/org/ecs-engine v0.x.0
+│   # require github.com/org/boltengine v0.x.0
 │   #
 │   # The line below is ONLY for local co-development.
 │   # It MUST be removed before tagging any release (enforced by CI).
-│   # replace github.com/org/ecs-engine => ../ecs-engine
+│   # replace github.com/org/boltengine => ../boltengine
 │
 ├── go.sum
 └── CONTRIBUTING.md
@@ -127,7 +127,7 @@ ecs-editor/
 ## 🏗️ Game Project Structure (User Project)
 
 ```plaintext
-my-game/                    # Typical project using ecs-engine
+my-game/                    # Typical project using boltengine
 ├── assets/                 # Raw assets (glTF, images, audio, scenes)
 ├── cmd/
 │   └── game/
@@ -136,5 +136,5 @@ my-game/                    # Typical project using ecs-engine
 │   ├── component/          # Custom components
 │   └── system/             # Custom systems
 ├── config/                 # Declarative definitions (UI, logic flows, templates)
-└── go.mod                  # module my-game; require github.com/teratron/ecs-engine
+└── go.mod                  # module my-game; require github.com/teratron/boltengine
 ```

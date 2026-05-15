@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [ecs-engine: l1-hierarchy-system.md], [ecs-engine: l1-entity-system.md] |
+| **Related Specifications** | [boltengine: l1-hierarchy-system.md], [boltengine: l1-entity-system.md] |
 
 ## Overview
 
@@ -31,6 +31,7 @@ Game worlds often consist of thousands of entities. A flat list is unmanageable.
 ### 4.1 Tree Representation
 
 The panel uses a lazy-loading tree widget:
+
 - **Filtering**: Search bar to filter entities by name or component type.
 - **Visibility Toggles**: Buttons to hide/show entities in the viewport.
 - **Locking**: Prevent accidental selection/modification.

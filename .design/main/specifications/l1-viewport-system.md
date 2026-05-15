@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [ecs-engine: l1-render-core.md], [ecs-engine: l1-camera-and-visibility.md] |
+| **Related Specifications** | [boltengine: l1-render-core.md], [boltengine: l1-camera-and-visibility.md] |
 
 ## Overview
 
@@ -32,6 +32,7 @@ An editor is useless without a visual representation of the game world. The view
 ### 4.1 Rendering Bridge
 
 The Viewport uses the **Extract Pattern** from the render pipeline:
+
 1. **Game Scene** renders to an internal `RenderTexture`.
 2. **Editor UI** uses that `RenderTexture` as an image source for a `ViewportWidget`.
 
