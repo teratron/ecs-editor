@@ -1,21 +1,21 @@
 # Contributing
 
-## 📂 Editor Repository Structure (`bolteditor`)
+## 📂 Editor Repository Structure (`neueditor`)
 
-The editor is a **separate Git repository** that depends on `boltengine` as a standard Go module.
+The editor is a **separate Git repository** that depends on `neuengine` as a standard Go module.
 It never imports `internal/` packages from the engine — only `pkg/`. See `l1-multi-repo-architecture`
 for the full rationale and versioning contract.
 
 ```mermaid
 graph TD
-    subgraph "Repository: bolteditor"
+    subgraph "Repository: neueditor"
         ED_CMD[cmd/editor]
         ED_AI[internal/ai]
         ED_ORCH[internal/orchestrator]
         ED_UI[internal/panels]
     end
 
-    subgraph "Repository: boltengine"
+    subgraph "Repository: neuengine"
         ENG_CORE[internal/ecs]
         ENG_HOT[internal/hotreload]
         ENG_PKG[pkg/editor & pkg/protocol]
@@ -34,7 +34,7 @@ graph TD
 ```
 
 ```plaintext
-bolteditor/
+neueditor/
 ├── cmd/
 │   ├── editor/             # Main editor binary
 │   │   └── main.go         # NewApp() + DefaultPlugins + EditorPlugin{}
@@ -112,13 +112,13 @@ bolteditor/
 │   └── default.flow.json   # Starter flow definition for new projects
 │
 ├── go.mod
-│   # module github.com/org/bolteditor
+│   # module github.com/org/neueditor
 │   #
-│   # require github.com/org/boltengine v0.x.0
+│   # require github.com/org/neuengine v0.x.0
 │   #
 │   # The line below is ONLY for local co-development.
 │   # It MUST be removed before tagging any release (enforced by CI).
-│   # replace github.com/org/boltengine => ../boltengine
+│   # replace github.com/org/neuengine => ../neuengine
 │
 ├── go.sum
 └── CONTRIBUTING.md
@@ -127,7 +127,7 @@ bolteditor/
 ## 🏗️ Game Project Structure (User Project)
 
 ```plaintext
-my-game/                    # Typical project using boltengine
+my-game/                    # Typical project using neuengine
 ├── assets/                 # Raw assets (glTF, images, audio, scenes)
 ├── cmd/
 │   └── game/
@@ -136,5 +136,5 @@ my-game/                    # Typical project using boltengine
 │   ├── component/          # Custom components
 │   └── system/             # Custom systems
 ├── config/                 # Declarative definitions (UI, logic flows, templates)
-└── go.mod                  # module my-game; require github.com/teratron/boltengine
+└── go.mod                  # module my-game; require github.com/neuengine/neu
 ```

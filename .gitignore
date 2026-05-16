@@ -63,6 +63,7 @@ copilot-instructions.md
 
 # Logs
 *.log
+*cache/
 
 # OS
 .DS_Store

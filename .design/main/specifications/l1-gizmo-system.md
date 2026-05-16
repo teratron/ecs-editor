@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [l1-viewport-system.md](l1-viewport-system.md), [boltengine: l1-math-system.md], [boltengine: l1-input-system.md] |
+| **Related Specifications** | [l1-viewport-system.md](l1-viewport-system.md), [neuengine: l1-math-system.md], [neuengine: l1-input-system.md] |
 
 ## Overview
 

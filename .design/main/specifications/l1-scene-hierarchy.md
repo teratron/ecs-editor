@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [boltengine: l1-hierarchy-system.md], [boltengine: l1-entity-system.md] |
+| **Related Specifications** | [neuengine: l1-hierarchy-system.md], [neuengine: l1-entity-system.md] |
 
 ## Overview
 

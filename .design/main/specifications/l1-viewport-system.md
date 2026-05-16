@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [boltengine: l1-render-core.md], [boltengine: l1-camera-and-visibility.md] |
+| **Related Specifications** | [neuengine: l1-render-core.md], [neuengine: l1-camera-and-visibility.md] |
 
 ## Overview
 

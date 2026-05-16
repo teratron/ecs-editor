@@ -1,1 +1,1 @@
-# Bolt Editor
+# Neu Editor

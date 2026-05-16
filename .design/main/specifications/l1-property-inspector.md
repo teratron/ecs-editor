@@ -5,7 +5,7 @@
 | **Layer** | 1 (concept) |
 | **Status** | Draft |
 | **Version** | 0.1.0 |
-| **Related Specifications** | [boltengine: l1-type-registry.md], [boltengine: l1-component-system.md] |
+| **Related Specifications** | [neuengine: l1-type-registry.md], [neuengine: l1-component-system.md] |
 
 ## Overview
 
